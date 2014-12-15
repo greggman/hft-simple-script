@@ -46,23 +46,6 @@ window.onload = function() {
   var colorElem = document.getElementById("display");
   var client = new HFT.GameClient();
 
-  // Note: HFT.CommonUI handles these events for almost all the samples.
-  var onConnect = function() {
-    statusElem.innerHTML = "you've connected to the relayserver";
-  };
-
-  var onDisconnect = function() {
-    statusElem.innerHTML = "you were disconnected from the relayserver";
-  }
-
-  // If I was going to handle this without HFT.CommonUI this is what I'd do
-  //client.addEventListener('connect', onConnect);
-  //client.addEventListener('disconnect', onDisconnect);
-
-  // Because I want the HFT.CommonUI to work
-  globals.disconnectFn = onDisconnect;
-  globals.connectFn = onConnect;
-
   HFT.CommonUI.setupStandardControllerUI(client, globals);
 
   var randInt = function(range) {
