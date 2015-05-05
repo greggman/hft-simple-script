@@ -1,16 +1,15 @@
 {
-  "name": "Simple Script",
+  "dependencies": {},
   "description": "A simple example the uses script tags instead of require.js",
-  "version": "0.0.1",
-  "private": false,
-  "dependencies": {
-  },
   "happyFunTimes": {
-    "gameId": "simple-script",
+    "apiVersion": "1.9.0",
     "category": "example",
-    "apiVersion": "1.3.0",
-    "useScriptTag": true,
+    "gameId": "simple-script",
     "gameType": "html",
-    "minPlayers": 1
-  }
+    "minPlayers": 1,
+    "useScriptTag": true
+  },
+  "name": "Simple Script",
+  "private": false,
+  "version": "0.0.1"
 }
